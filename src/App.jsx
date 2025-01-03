@@ -1,7 +1,11 @@
+import { Article } from "./components/Article";
+import { Header } from "./components/Header";
+
 function App() {
   return (
     <>
-      <h1>Meu Blog</h1>
+      <Header />
+      <Article />
     </>
   );
 }
