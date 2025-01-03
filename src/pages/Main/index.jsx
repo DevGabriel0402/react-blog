@@ -8,24 +8,24 @@ export const Main = () => {
     api.get("/posts").then((response) => {
       setPost(response.data);
     });
-  });
+  }, []);
 
   return (
     <>
       <section className="container">
-        <h1>Main</h1>
+        <h1>Pagina Inicial</h1>
         <div className="container-posts flex mt-5">
           {post.map((post) => {
             return (
-              <>
-                <Post
-                  category={post.category}
-                  title={post.title}
-                  resume={post.resume}
-                  author={post.author}
-                  date={post.date}
-                ></Post>
-              </>
+              <Post
+                key={post.id}
+                id={post.id}
+                category={post.category}
+                title={post.title}
+                resume={post.resume}
+                author={post.author}
+                date={post.date}
+              ></Post>
             );
           })}
         </div>

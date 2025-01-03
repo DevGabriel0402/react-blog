@@ -1,6 +1,6 @@
 export const Post = (post) => {
   return (
-    <div className="post mx-2">
+    <div className="post mx-2" id={post.id}>
       <div className="img-post"></div>
       <h5>{post.category}</h5>
       <h3>{post.title}</h3>
