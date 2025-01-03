@@ -16,6 +16,7 @@ a {
 
 .flex {
   display: flex;
+  align-items: center;
 }
 .flex-space-between {
   display: flex;
@@ -72,4 +73,12 @@ a {
   top: 10px;
   left: 8px;
   width: 18px;
+}
+
+.img-profile {
+  width: 56px;
+  height: 56px;
+
+  background-color: $gray-2;
+  border-radius: 50%;
 }
